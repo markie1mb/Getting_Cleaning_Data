@@ -19,8 +19,8 @@ Dataframe 2:
      groupbymean
 
 This directory contains 4 files:
-1. run_analysis.R: The program which does the above mentioned actions
-2. run_analysis_codebook.txt: An explanition of all the columns of the columns of the 2 dataframes.
-3. README.txt : Contains iformation about how to interpret the program.
-4. README_from_the_original_files.txt: The readme of the original files.
++ run_analysis.R: The program which does the above mentioned actions
++ run_analysis_codebook.txt: An explanition of all the columns of the columns of the 2 dataframes.
++ README.txt : Contains iformation about how to interpret the program.
++ README_from_the_original_files.txt: The readme of the original files.
 
