@@ -1,0 +1,150 @@
+RUN_ANALYSIS
+
+After running the program run_analysis.R you get 2 dataframes containing a list of collumns 
+This documents explains the columns of the two dataframes: 
+
+Dataframe 1:
+runanalysis
+This dataframe contains mean and standard daviation information about of various functions on a set of test en train data of a movement app on an Galaxy II smartphone
+
+Dataframe 2:
+groupbymean
+This dataframe contains a summary of all values per subject per activity.
+
+
+The columns selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+
+The columns of the dataframes:
+
+The last 2 columns are:
+activity	WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING
+, STANDING, LAYING
+
+subject		the number of the person who is doing the activity
+
+The other 86 columns:
+
+In short:
+ the column names consits of the next terms:
+1)Prefix:
+t	Time
+f	Frequency
+
+2) Accelaration Component
+body	Body movement
+gravity	The Gravity component
+
+3)signal source
+acc	accelerometer
+gyro	gyroscope
+
+4)
+jerk	Jerk signals
+mag	Magnitude
+
+
+5)Function:
+mean 	Mean
+std	Standard Deviation
+
+6)Axis letter:
+x	X-axis movement
+y	Y-axis movement
+z	Z-axis movement
+
+
+The columns are:
+
+ [1] "tbodyaccmeanx"                    
+ [2] "tbodyaccmeany"                    
+ [3] "tbodyaccmeanz"                    
+ [4] "tbodyaccstdx"                     
+ [5] "tbodyaccstdy"                     
+ [6] "tbodyaccstdz"                     
+ [7] "tgravityaccmeanx"                 
+ [8] "tgravityaccmeany"                 
+ [9] "tgravityaccmeanz"                 
+[10] "tgravityaccstdx"                  
+[11] "tgravityaccstdy"                  
+[12] "tgravityaccstdz"                  
+[13] "tbodyaccjerkmeanx"                
+[14] "tbodyaccjerkmeany"                
+[15] "tbodyaccjerkmeanz"                
+[16] "tbodyaccjerkstdx"                 
+[17] "tbodyaccjerkstdy"                 
+[18] "tbodyaccjerkstdz"                 
+[19] "tbodygyromeanx"                   
+[20] "tbodygyromeany"                   
+[21] "tbodygyromeanz"                   
+[22] "tbodygyrostdx"                    
+[23] "tbodygyrostdy"                    
+[24] "tbodygyrostdz"                    
+[25] "tbodygyrojerkmeanx"               
+[26] "tbodygyrojerkmeany"               
+[27] "tbodygyrojerkmeanz"               
+[28] "tbodygyrojerkstdx"                
+[29] "tbodygyrojerkstdy"                
+[30] "tbodygyrojerkstdz"                
+[31] "tbodyaccmagmean"                  
+[32] "tbodyaccmagstd"                   
+[33] "tgravityaccmagmean"               
+[34] "tgravityaccmagstd"                
+[35] "tbodyaccjerkmagmean"              
+[36] "tbodyaccjerkmagstd"               
+[37] "tbodygyromagmean"                 
+[38] "tbodygyromagstd"                  
+[39] "tbodygyrojerkmagmean"             
+[40] "tbodygyrojerkmagstd"              
+[41] "fbodyaccmeanx"                    
+[42] "fbodyaccmeany"                    
+[43] "fbodyaccmeanz"                    
+[44] "fbodyaccstdx"                     
+[45] "fbodyaccstdy"                     
+[46] "fbodyaccstdz"                     
+[47] "fbodyaccmeanfreqx"                
+[48] "fbodyaccmeanfreqy"                
+[49] "fbodyaccmeanfreqz"                
+[50] "fbodyaccjerkmeanx"                
+[51] "fbodyaccjerkmeany"                
+[52] "fbodyaccjerkmeanz"                
+[53] "fbodyaccjerkstdx"                 
+[54] "fbodyaccjerkstdy"                 
+[55] "fbodyaccjerkstdz"                 
+[56] "fbodyaccjerkmeanfreqx"            
+[57] "fbodyaccjerkmeanfreqy"            
+[58] "fbodyaccjerkmeanfreqz"            
+[59] "fbodygyromeanx"                   
+[60] "fbodygyromeany"                   
+[61] "fbodygyromeanz"                   
+[62] "fbodygyrostdx"                    
+[63] "fbodygyrostdy"                    
+[64] "fbodygyrostdz"                    
+[65] "fbodygyromeanfreqx"               
+[66] "fbodygyromeanfreqy"               
+[67] "fbodygyromeanfreqz"               
+[68] "fbodyaccmagmean"                  
+[69] "fbodyaccmagstd"                   
+[70] "fbodyaccmagmeanfreq"              
+[71] "fbodybodyaccjerkmagmean"          
+[72] "fbodybodyaccjerkmagstd"           
+[73] "fbodybodyaccjerkmagmeanfreq"      
+[74] "fbodybodygyromagmean"             
+[75] "fbodybodygyromagstd"              
+[76] "fbodybodygyromagmeanfreq"         
+[77] "fbodybodygyrojerkmagmean"         
+[78] "fbodybodygyrojerkmagstd"          
+[79] "fbodybodygyrojerkmagmeanfreq"     
+[80] "angletbodyaccmeangravity"         
+[81] "angletbodyaccjerkmeangravitymean" 
+[82] "angletbodygyromeangravitymean"    
+[83] "angletbodygyrojerkmeangravitymean"
+[84] "anglexgravitymean"                
+[85] "angleygravitymean"                
+[86] "anglezgravitymean"                
+[87] "activity"                         
+[88] "subject"          
